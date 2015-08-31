@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ie">
+    <parameter name="browser" value="internet-explorer" />
+
+    <test name="ie-desktop">
+        <parameter name="width" value="DESKTOP" />
+        <packages>
+            <package name="edu.iu.es.esi.demo" />
+        </packages>
+    </test>
+
+    <test name="ie-mobile">
+        <parameter name="width" value="MOBILE" />
+        <groups>
+            <run>
+                <include name="mobile" />
+            </run>
+        </groups>
+        <packages>
+            <package name="edu.iu.es.esi.demo" />
+        </packages>
+    </test>
+
+    <test name="ie-tablet">
+        <parameter name="width" value="TABLET" />
+        <groups>
+            <run>
+                <include name="tablet" />
+            </run>
+        </groups>
+        <packages>
+            <package name="edu.iu.es.esi.demo" />
+        </packages>
+    </test>
+
+    <test name="ie-small-desktop">
+        <parameter name="width" value="SMALL_DESKTOP" />
+        <groups>
+            <run>
+                <include name="small-desktop" />
+            </run>
+        </groups>
+        <packages>
+            <package name="edu.iu.es.esi.demo" />
+        </packages>
+    </test>
+
+</suite>

@@ -1,0 +1,14 @@
+# IntelliJ Metadata
+.idea
+*.iml
+
+# Eclipse Metadata
+.settings
+.classpath
+.project
+
+# Maven Artifacts
+target
+
+# Bamboo Artifacts
+build-number.txt
